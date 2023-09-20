@@ -45,10 +45,7 @@
     "lint": "eslint src/**/*.js",
     "pretest": "npm run lint",
     "test:ava": "ava",
-    "test": "nyc npm run test:ava",
-    "prebuild": "npm-run-all clean lint",
-    "build": "babel src --out-dir dist",
-    "prepublish": "npm run build"
+    "test": "nyc npm run test:ava"
   },
   "babel": {
     "presets": [
